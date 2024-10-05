@@ -1,8 +1,3 @@
-// TOOLTIPS
-
-
-
-
 // DECLARA VARIÁVEIS DAS IMAGENS
 
 let camada1 = document.getElementById('camada1');
@@ -27,18 +22,11 @@ window.addEventListener('scroll', () => {
 
 // DECLARA VARIAVEIS SCROLLAMA
 
-var main = document.querySelector("body");
-var scrolly = main.querySelector("#scrolly");
-var sticky = scrolly.querySelector(".sticky-thing");
-var article = scrolly.querySelector("article");
-var steps = article.querySelectorAll(".step");
-
-// DECLARA VARIAVEIS SCROLLAMA
-var main = document.querySelector("body");
-var scrolly = main.querySelector("#scrolly");
-var sticky = scrolly.querySelector(".sticky-thing");
-var article = scrolly.querySelector("article");
-var steps = article.querySelectorAll(".step");
+// var main = document.querySelector("body");
+// var scrolly = main.querySelector("#scrolly");
+// var sticky = scrolly.querySelector(".sticky-thing");
+// var article = scrolly.querySelector("article");
+var steps = document.querySelectorAll(".step");
 
 // INICIANDO O SCROLLAMA
 var scroller = scrollama();
@@ -72,7 +60,7 @@ function handleStepEnter(response) {
 function inicia() {
     scroller
         .setup({
-            step: "#scrolly article .step",
+            step: ".step",
             offset: 0.33,
             debug: false // DESATIVA O DEBUGAR (LINHAS DE REFERENCIA)
         })

@@ -179,7 +179,8 @@ article {
     /* background-color: #ff1f1f; */
     z-index: 0;
     top: 12.5vh;
-    height: 75vh;
+    /* height: 75vh; */
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
